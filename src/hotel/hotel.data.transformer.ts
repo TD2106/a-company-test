@@ -2,7 +2,6 @@ import { RenameScheme } from './types';
 import { Hotel } from './hotel.model';
 import {
     TRANSFORMER_FACTORY_CONSTANT_DICTIONARY,
-    FIRST_API_ID,
 } from './constants';
 
 export class HotelApiDataTransformer {

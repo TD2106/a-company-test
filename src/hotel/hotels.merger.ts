@@ -5,6 +5,8 @@ import { removeSpacesFromString } from '../utils/utils';
 @Injectable()
 export class HotelMerger {
     public mergeHotels = (hotels: Hotel[]): Hotel => {
+        // multiple loops are being run here can be optimized to one
+        // loop only (map method is one loop)
         return {
             id: hotels[0].id,
             destination_id: hotels[0].destination_id,
